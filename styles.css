@@ -1,0 +1,29 @@
+.contenedor-personas {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .persona {
+    text-align: center;
+    margin: 0 10px;
+    width: 300px;
+  }
+  
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }
+  
+  p {
+    margin-top: 5px;
+  }
