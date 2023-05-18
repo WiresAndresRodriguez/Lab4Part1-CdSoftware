@@ -1,1 +1,52 @@
-Formulario de Contacto
+<!--Formulario de Contacto-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Contacto</title>
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    input[type=text], textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h2>Formulario de Contacto</h2>
+    <form action="enviar.php" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+      
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Ingresa tu email" required>
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+      
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+  
+</body>
+</html>
